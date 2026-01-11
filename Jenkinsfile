@@ -2,14 +2,7 @@
 pipeline {
     agent any
     
-    stages {
-        stage('Checkout') {
-            steps {
-                cleanWs()
-                checkout scm
-            }
-        }
-        
+    stages {      
         stage('Build in Docker') {
             agent {
                 docker {
