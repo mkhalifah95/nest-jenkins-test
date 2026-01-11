@@ -27,13 +27,13 @@ pipeline {
             echo 'This will always run'
         }
         success {
-            echo 'This will run only if successful'
+            echo 'Mabrook ya ghali! 🎉'
         }
         failure {
-            echo 'This will run only if failed'
+            echo 'Failed ya ghali! 💔'
         }
         unstable {
-            echo 'This will run only if the run was marked as unstable'
+            echo 'Unstable ya ghali! 🤔'
         }
         changed {
             echo 'This will run only if the state of the Pipeline has changed'
