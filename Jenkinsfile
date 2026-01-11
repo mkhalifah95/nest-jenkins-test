@@ -13,10 +13,5 @@ pipeline {
                 sh 'echo "Docker daemon is reachable via socket"'
             }
         }
-        stage('build') {
-            steps {
-                sh 'node --version'
-            }
-        }
     }
 }
